@@ -47,4 +47,30 @@ console.log(typeof myFuntion);//function (in detail known as function object)
 console.log(typeof heros);//object
 console.log(typeof userEmail);//undefined
 
+// *******************************************
+
+//Memory in JS
+//Stack(Primitive(declared var copy is present)), Heap(Non-Primitive(origin reference of that var))
+
+console.log("Stack memory example using String type");
+let myName="Ananya"
+let anotherName=myName
+anotherName="Harry"
+console.log(anotherName);//Harry as copy is changed here not the original one because it's primitive type ,hence stack is used
+console.log(myName);//Ananya
+
+console.log("Heap memory example using Object type");
+let user1={
+    email:"user7823gmail.com",
+    upi:"user@jk",
+};
+
+let user2=user1;
+
+user2.email="user2gmail.com";
+user2.upi="user2@mn";
+
+console.log(user1);//{ email: 'user2gmail.com', upi: 'user2@mn' }
+console.log(user2);//{ email: 'user2gmail.com', upi: 'user2@mn' }
+//as Object is Non-Primitive type ,hence it's stored in heap,so reference is stored in user2 ,hence the value changes directly inside the heap
 
