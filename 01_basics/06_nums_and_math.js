@@ -34,7 +34,14 @@ console.log(Math.floor(4.6));//4
 console.log(Math.min(4, 3, 6, 8));//3
 console.log(Math.max(4, 3, 6, 8));//8
 console.log(Math.random());//0.8420222075402672 as it gives the value from 0 to 1 (0-1)
-console.log((Math.random()*10) + 1);//7.268534618936618 for single digit
+console.log(Math.floor((Math.random()*10)) + 1);//6 for single digit
+
+
+const min=10
+const max=20
+
+console.log(Math.floor(Math.random() *(max-min+1))+min)//+1 so that no zero comes as o/p
+//and finally o/p comes between 10  to 20 as 16
 
 
 
