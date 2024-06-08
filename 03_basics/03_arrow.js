@@ -71,3 +71,14 @@ chai2()/*undefined
 const addTwo=(num1,num2) =>num1+num2
 console.log(addTwo(2,3));//5
 
+const addTwoNum=(num1,num2) =>(num1+num2)
+console.log(addTwoNum(3,4));//7
+
+const obj2=() => ({username:"Ananya"})
+console.log(obj2());//{ username: 'Ananya' }
+
+const myArray=[2,5,3,7,8];
+//myArray.forEach(function() {})
+//myArray.forEach(() => {return c})
+//myArray.forEach(() => ())
+
